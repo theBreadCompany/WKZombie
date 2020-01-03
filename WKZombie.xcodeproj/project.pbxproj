@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF1F91641CB6AF9300A58A7F /* dev.WKZombieRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAECCAC1CB69C0200C87F3B /* dev.WKZombieRevised.framework */; };
+		BF1F91641CB6AF9300A58A7F /* WKZombieRevised.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAECCAC1CB69C0200C87F3B /* WKZombieRevised.framework */; };
 		BF1F919A1CB6DC6E00A58A7F /* WKZombie.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1F91981CB6DC6E00A58A7F /* WKZombie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF1F919B1CB6DC8000A58A7F /* WKZombie.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1F91981CB6DC6E00A58A7F /* WKZombie.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF2B33A81D90759E004E6621 /* ContentFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B33921D90759E004E6621 /* ContentFetcher.swift */; };
@@ -119,7 +119,7 @@
 		BF455D9D1CEFBF99006D97D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BF455DA91CEFBF99006D97D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF455DAD1CEFC077006D97D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BFAECCAC1CB69C0200C87F3B /* dev.WKZombieRevised.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dev.WKZombieRevised.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAECCAC1CB69C0200C87F3B /* WKZombieRevised.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WKZombieRevised.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD2E8901CB7BD7F0085B499 /* hpple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hpple.framework; path = "../../Library/Developer/Xcode/DerivedData/WKZombie-acuscrvsvqppnlaazfyfqegvxyue/Build/Products/Debug-iphoneos/hpple.framework"; sourceTree = "<group>"; };
 		BFD2E8921CB7BD890085B499 /* hpple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hpple.framework; path = "../../Library/Developer/Xcode/DerivedData/WKZombie-acuscrvsvqppnlaazfyfqegvxyue/Build/Products/Debug/hpple.framework"; sourceTree = "<group>"; };
 		BFD2E8B31CB7D0830085B499 /* hpple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = hpple.framework; path = Carthage/Build/Mac/hpple.framework; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1F91641CB6AF9300A58A7F /* dev.WKZombieRevised.framework in Frameworks */,
+				BF1F91641CB6AF9300A58A7F /* WKZombieRevised.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 		BFAECCAD1CB69C0200C87F3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFAECCAC1CB69C0200C87F3B /* dev.WKZombieRevised.framework */,
+				BFAECCAC1CB69C0200C87F3B /* WKZombieRevised.framework */,
 				BF1F915F1CB6AF9300A58A7F /* Tests.xctest */,
 				BF1F917D1CB6D83400A58A7F /* WKZombie.framework */,
 				BF455D9B1CEFBF99006D97D0 /* HostApplication.app */,
@@ -382,7 +382,7 @@
 			);
 			name = WKZombie;
 			productName = WKZombie;
-			productReference = BFAECCAC1CB69C0200C87F3B /* dev.WKZombieRevised.framework */;
+			productReference = BFAECCAC1CB69C0200C87F3B /* WKZombieRevised.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -756,6 +756,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -808,6 +809,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -843,7 +845,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hakko-dev.WKZombieRevised";
-				PRODUCT_NAME = dev.WKZombieRevised;
+				PRODUCT_NAME = WKZombieRevised;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
@@ -878,7 +880,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hakko-dev.WKZombieRevised";
-				PRODUCT_NAME = dev.WKZombieRevised;
+				PRODUCT_NAME = WKZombieRevised;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
