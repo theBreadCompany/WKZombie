@@ -4,7 +4,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 def import_pods
-    pod 'WKZombie', :path => '../'
+    pod 'WKZombieRevised', :path => '../'
 end
 
 target 'Example iOS' do
