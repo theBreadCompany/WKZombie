@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.author       = "Woohyun Kim"
 
-  s.ios.deployment_target = '10.3'
+  s.ios.deployment_target = '11.0'
   s.osx.deployment_target = '10.12'
 
   s.source       = { :git => "https://github.com/dividenconquer/WKZombie.git", :tag => s.version.to_s }
@@ -27,7 +27,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'hpple', '0.2.0' 
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
-
-  s.swift_versions = '4.0'
+  s.swift_version = '4.0'
 end
