@@ -138,7 +138,7 @@ internal class RenderOperation : Operation {
     override func cancel() {
         Logger.log("Cancelling Rendering - \(String(describing: name))")
         super.cancel()
-        self.error = ActionError.notFound as! Error
+        self.error = ActionError.notFound as? Error
         stopTimeout()
         cleanupReferences()
         isExecuting = false

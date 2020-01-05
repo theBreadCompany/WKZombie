@@ -1,0 +1,1 @@
+bundle exec pod trunk push WKZombieRevised.podspec
