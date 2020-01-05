@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import WKZombie
+import WKZombieRevised
 
 class SnapshotCell : UICollectionViewCell {
     static let cellIdentifier = "snapshotCell"

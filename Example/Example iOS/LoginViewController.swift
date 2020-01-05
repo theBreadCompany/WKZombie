@@ -22,7 +22,7 @@
 // THE SOFTWARE.
 
 import UIKit
-import WKZombie
+import WKZombieRevised
 
 class LoginViewController : UIViewController {
     

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author       = "Woohyun Kim"
 
   s.ios.deployment_target = '11.0'
-  s.osx.deployment_target = '10.12'
+  s.osx.deployment_target = '10.6'
 
   s.source       = { :git => "https://github.com/dividenconquer/WKZombie.git", :tag => s.version.to_s }
 

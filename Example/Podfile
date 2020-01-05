@@ -13,7 +13,7 @@ target 'Example iOS' do
 end
 
 target 'Example OSX' do
-	platform :osx, '10.11'
+	platform :osx, '10.6'
 	import_pods
 end
 

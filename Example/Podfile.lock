@@ -1,0 +1,23 @@
+PODS:
+  - hpple (0.2.0)
+  - WKZombieRevised (1.1.4):
+    - hpple (= 0.2.0)
+
+DEPENDENCIES:
+  - WKZombieRevised (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - hpple
+
+EXTERNAL SOURCES:
+  WKZombieRevised:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  WKZombieRevised: 515fbb6b92387c33fb071ca6a56d4435348c0a6a
+
+PODFILE CHECKSUM: 8c8976f6a9ad560131ad361ce4728e047480631d
+
+COCOAPODS: 1.8.4
