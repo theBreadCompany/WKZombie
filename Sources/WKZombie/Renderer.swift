@@ -41,7 +41,7 @@ internal class Renderer {
         }
     }
     
-    var timeoutInSeconds : TimeInterval = 30.0
+    var timeoutInSeconds : TimeInterval = 10.0
     
     var showNetworkActivity : Bool = true
     

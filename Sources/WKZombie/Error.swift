@@ -51,3 +51,7 @@ extension ActionError: CustomDebugStringConvertible {
         }
     }
 }
+
+public struct JavascriptError: Error{
+    
+}

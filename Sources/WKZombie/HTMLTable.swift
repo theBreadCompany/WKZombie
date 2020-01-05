@@ -29,7 +29,14 @@ public class HTMLTable : HTMLElement {
     /// Returns all row elements within this table
     public var rows : [HTMLTableRow]? {
         let rows : [HTMLTableRow]? = children()
-        return (rows?.first?.tagName == "tbody") ? rows?.first?.children() : rows
+        if let tbodyIndex = rows?.firstIndex(where: { row in
+            row.tagName == "tbody"
+        }){
+            // tbody가 있다면
+            return rows?[tbodyIndex].childrenWithTagName("tr")
+        }else{
+            return rows
+        }
     }
         
     //========================================
@@ -47,7 +54,7 @@ public class HTMLTableRow : HTMLElement {
     
     /// Returns all columns within this row.
     public var columns : [HTMLTableColumn]? {
-        return children()
+        return childrenWithTagName("td")
     }
     
     //========================================

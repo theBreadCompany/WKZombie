@@ -113,7 +113,16 @@ public class HTMLParserElement : CustomStringConvertible {
     }
     
     public func children<T: HTMLElement>() -> [T]? {
-        return element?.children.compactMap { T(element:$0 as AnyObject) }
+        return element?.children
+            .compactMap { T(element:$0 as AnyObject) }
+//            .filter{item in
+//                if let content = item.content {
+//                    return content.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+//                }else{
+//                    return false
+//                }
+//                
+//        }
     }
     
     public func hasChildren() -> Bool {
