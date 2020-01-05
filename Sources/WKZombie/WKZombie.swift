@@ -204,7 +204,6 @@ public extension WKZombie {
     }
 }
 
-
 //========================================
 // MARK: Submit Form
 //========================================
@@ -418,9 +417,9 @@ public extension WKZombie {
      
      - returns: The WKZombie Action.
      */
-     func execute(_ script: JavaScript) -> Action<JavaScriptResult> {
+     func execute(_ script: JavaScript, then postAction: PostAction? = nil) -> Action<JavaScriptResult> {
         return Action() { [unowned self] completion in
-            self._renderer.executeScript(script, completionHandler: { result, response, error in
+            self._renderer.executeScript(script, willLoadPage: postAction != nil, postAction: postAction ?? .none, completionHandler: { result, response, error in
                 let data = self._handleResponse(result as? Data, response: response, error: error)
                 let output = data >>> decodeString
                 Logger.log("Script Result".uppercased() + "\n\(output)\n")
@@ -437,9 +436,9 @@ public extension WKZombie {
      
      - returns: The WKZombie Action.
      */
-     func execute<T: HTMLPage>(_ script: JavaScript) -> (_ page : T) -> Action<JavaScriptResult> {
+    func execute<T: HTMLPage>(_ script: JavaScript, then postAction: PostAction? = nil) -> (_ page : T) -> Action<JavaScriptResult> {
         return { [unowned self] (page : T) -> Action<JavaScriptResult> in
-            return self.execute(script)
+            return self.execute(script, then: postAction)
         }
     }
 }

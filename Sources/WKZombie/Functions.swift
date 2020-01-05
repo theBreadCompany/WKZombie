@@ -183,16 +183,16 @@ public func get<T>(by searchType: SearchType<T>) -> (_ page: HTMLPage) -> Action
  The returned WKZombie Action will execute a JavaScript string __using the shared WKZombie instance__.
  - seealso: _execute()_ function in _WKZombie_ class for more info.
  */
-public func execute(_ script: JavaScript) -> Action<JavaScriptResult> {
-    return WKZombie.sharedInstance.execute(script)
+public func execute(_ script: JavaScript, then postAction: PostAction? = nil) -> Action<JavaScriptResult> {
+    return WKZombie.sharedInstance.execute(script, then: postAction)
 }
 
 /**
  The returned WKZombie Action will execute a JavaScript string __using the shared WKZombie instance__.
  - seealso: _execute()_ function in _WKZombie_ class for more info.
  */
-public func execute<T: HTMLPage>(_ script: JavaScript) -> (_ page: T) -> Action<JavaScriptResult> {
-    return WKZombie.sharedInstance.execute(script)
+public func execute<T: HTMLPage>(_ script: JavaScript, then postAction: PostAction? = nil) -> (_ page: T) -> Action<JavaScriptResult> {
+    return WKZombie.sharedInstance.execute(script, then: postAction)
 }
 
 
