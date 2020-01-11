@@ -96,7 +96,7 @@ public extension Result where T:Collection {
 extension Result: CustomDebugStringConvertible {
     public var debugDescription: String {
         switch self {
-        case .success(let value):
+        case .success(_):
             return "Success"
         case .error(let error):
             return "Error: \(String(describing: error))"
