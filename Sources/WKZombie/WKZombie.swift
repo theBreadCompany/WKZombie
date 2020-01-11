@@ -422,7 +422,6 @@ public extension WKZombie {
             self._renderer.executeScript(script, willLoadPage: postAction != nil, postAction: postAction ?? .none, completionHandler: { result, response, error in
                 let data = self._handleResponse(result as? Data, response: response, error: error)
                 let output = data >>> decodeString
-                Logger.log("Script Result".uppercased() + "\n\(output)\n")
                 completion(output)
             })
         }
