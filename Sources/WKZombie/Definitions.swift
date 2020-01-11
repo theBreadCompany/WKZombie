@@ -97,7 +97,7 @@ extension Result: CustomDebugStringConvertible {
     public var debugDescription: String {
         switch self {
         case .success(let value):
-            return "Success: \(String(describing: value))"
+            return "Success"
         case .error(let error):
             return "Error: \(String(describing: error))"
         }
