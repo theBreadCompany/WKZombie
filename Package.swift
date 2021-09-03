@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
   name: "WKZombieRevised",
 products: [
-	.library(name: "WKZombie", target: ["WKZombieRevised"])
+	.library(name: "WKZombie", targets: ["WKZombieRevised"])
 ],
   dependencies: [
 	   .package(url: "https://github.com/mkoehnke/hpple.git", .branch("spm"))
