@@ -1,5 +1,5 @@
 // swift-tools-version:5.2.0
-
+import PackageDescription
 let package = Package(
   name: "WKZombieRevised",
   dependencies: [
