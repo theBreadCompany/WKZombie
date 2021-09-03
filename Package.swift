@@ -1,15 +1,15 @@
 // swift-tools-version:5.2.0
 import PackageDescription
 let package = Package(
-  name: "WKZombieRevised",
+  name: "WKZombie",
 products: [
-	.library(name: "WKZombie", targets: ["WKZombieRevised"])
+	.library(name: "WKZombie", targets: ["WKZombie"])
 ],
   dependencies: [
 	   .package(url: "https://github.com/mkoehnke/hpple.git", .branch("spm"))
   ],
   targets: [
-      .target(name: "WKZombieRevised"),
-      .target(name: "Example", dependencies:["WKZombieRevised"])
+      .target(name: "WKZombie"),
+      .target(name: "Example", dependencies:["WKZombie"])
   ]
 )
