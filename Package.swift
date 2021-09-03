@@ -6,10 +6,10 @@ products: [
 	.library(name: "WKZombie", targets: ["WKZombie"])
 ],
   dependencies: [
-	   .package(url: "https://github.com/mkoehnke/hpple.git", .branch("spm"))
+	   .package(url: "https://github.com/theBreadCompany/hpple.git", .branch("spm"))
   ],
   targets: [
-      .target(name: "WKZombie"),
+      .target(name: "WKZombie", dependencies: ["hpple"]),
       .target(name: "Example", dependencies:["WKZombie"])
   ]
 )
